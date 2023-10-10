@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-primary: 'Poppins',sans-serif;
+    --font-secondary: 'Montserrat',sans-serif;
+}
+
+.fm-primary{font-family: var(--font-primary);}
+.fm-secondary{font-family: var(--font-secondary);}
+
+body{font-family: var(--font-secondary);}
+
+.news-image{aspect-ratio: 2/3;object-fit: cover; object-position: center;width: 100%;}
+
+.text-ellipsis-3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.movie-item{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
